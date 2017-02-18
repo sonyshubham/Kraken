@@ -90,15 +90,10 @@ console.log("the options are ");
 console.log(config.mongodb.options);
 mongoose.connect(config.mongodb.kraken.uri, config.mongodb.options);
 // app.mongoose.krakenDb = krakenDb;
-
 // require('./middlewares/redis')(app)
 require('./middlewares/models')(app)
 require('./middlewares/routes')(app)
-
-// if (process.env.NODE_ENV !== 'production'){
-//   require('longjohn');
-// }
-
+require('./middlewares/startPing')(app)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -114,5 +109,4 @@ app.use(function(err, req, res, next) {
     res.status(err.status || 500)
     next(err)
 });
-
 module.exports = app;

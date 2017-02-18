@@ -5,4 +5,5 @@
 module.exports = function () {
 
 	var Website = require('../models/website')
+	  , MessengerSubscriber = require('../models/messengerSubscriber')
 }

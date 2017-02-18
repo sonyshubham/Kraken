@@ -28,6 +28,27 @@ module.exports = {
         host: '127.0.0.1'
     },
 
+    notificationCenter: {
+        token: 'abcd'
+    },
+
+    notifications: {
+        api: 'http://localhost:9001/send-notifications'
+    },
+
+    notificationChannels: {
+        email: 'shubham.soni@wingify.com',
+        slack: {
+            name: 'kraken',
+            token: 'xoxb-144053949622-dxoySNFz1uqBhIvQBAi1tkk3',
+            channel: 'dev',
+            user: 'kaushik'
+        },
+        messenger: {
+            token: 'EAAIetSpE6ZBUBAKvOdhic5ZC8ZCzj4rksIqzTXfAi4yZBKXUV243IY13i61OPRs1jF6T2I1GnZBt041mLswS44RvsKWhBXtARdz9bS2LPWg9tRKP3gv35lEXAZAMYZC5Me7pS3kC6fSTQqzuyUf8ryBzb0L4DP8K1Kx7ZCh2tafLdwZDZD'
+        }
+    },
+
     appId: '5763fcdded385de6d1a80800',
 
     booksLimitPerDay: 100,
