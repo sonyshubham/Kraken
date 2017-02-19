@@ -17,6 +17,8 @@ var chalk         = require('chalk')
   , hbs           = require('express-hbs')
   , cookieParser  = require('cookie-parser')
   , favicon       = require('serve-favicon')
+  , redis      = require('redis')
+  , redisClient = redis.createClient()
 
 var app = express();
 
